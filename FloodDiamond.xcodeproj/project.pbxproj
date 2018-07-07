@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F5313C420F10A8A001BD8B4 /* DiamondData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313C320F10A8A001BD8B4 /* DiamondData.swift */; };
+		5F5313C620F12399001BD8B4 /* DiamondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313C520F12399001BD8B4 /* DiamondCell.swift */; };
+		5F5313C820F12686001BD8B4 /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313C720F12686001BD8B4 /* Diamond.swift */; };
+		5F5313CA20F16BBF001BD8B4 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313C920F16BBF001BD8B4 /* ReceiptVC.swift */; };
+		5F5313CC20F182CA001BD8B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313CB20F182CA001BD8B4 /* User.swift */; };
+		5F5313CE20F1849F001BD8B4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313CD20F1849F001BD8B4 /* LoginVC.swift */; };
+		5FF4CF7120F0F5D1002435A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7020F0F5D1002435A4 /* AppDelegate.swift */; };
+		5FF4CF7320F0F5D1002435A4 /* DiamondCheckerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7220F0F5D1002435A4 /* DiamondCheckerVC.swift */; };
+		5FF4CF7520F0F5D1002435A4 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7420F0F5D1002435A4 /* ShopVC.swift */; };
+		5FF4CF7820F0F5D1002435A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7620F0F5D1002435A4 /* Main.storyboard */; };
+		5FF4CF7A20F0F5D2002435A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7920F0F5D2002435A4 /* Assets.xcassets */; };
+		5FF4CF7D20F0F5D2002435A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7B20F0F5D2002435A4 /* LaunchScreen.storyboard */; };
+		5FF4CF8820F0F5D2002435A4 /* FloodDiamondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF8720F0F5D2002435A4 /* FloodDiamondTests.swift */; };
+		5FF4CF9320F0F5D2002435A4 /* FloodDiamondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF9220F0F5D2002435A4 /* FloodDiamondUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FF4CF8420F0F5D2002435A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FF4CF6520F0F5D0002435A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FF4CF6C20F0F5D1002435A4;
+			remoteInfo = FloodDiamond;
+		};
+		5FF4CF8F20F0F5D2002435A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FF4CF6520F0F5D0002435A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FF4CF6C20F0F5D1002435A4;
+			remoteInfo = FloodDiamond;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F5313C320F10A8A001BD8B4 /* DiamondData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondData.swift; sourceTree = "<group>"; };
+		5F5313C520F12399001BD8B4 /* DiamondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCell.swift; sourceTree = "<group>"; };
+		5F5313C720F12686001BD8B4 /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
+		5F5313C920F16BBF001BD8B4 /* ReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptVC.swift; sourceTree = "<group>"; };
+		5F5313CB20F182CA001BD8B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F5313CD20F1849F001BD8B4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5FF4CF6D20F0F5D1002435A4 /* FloodDiamond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloodDiamond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF4CF7020F0F5D1002435A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FF4CF7220F0F5D1002435A4 /* DiamondCheckerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCheckerVC.swift; sourceTree = "<group>"; };
+		5FF4CF7420F0F5D1002435A4 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		5FF4CF7720F0F5D1002435A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FF4CF7920F0F5D2002435A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FF4CF7C20F0F5D2002435A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FF4CF7E20F0F5D2002435A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF4CF8320F0F5D2002435A4 /* FloodDiamondTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloodDiamondTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF4CF8720F0F5D2002435A4 /* FloodDiamondTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodDiamondTests.swift; sourceTree = "<group>"; };
+		5FF4CF8920F0F5D2002435A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF4CF8E20F0F5D2002435A4 /* FloodDiamondUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloodDiamondUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF4CF9220F0F5D2002435A4 /* FloodDiamondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodDiamondUITests.swift; sourceTree = "<group>"; };
+		5FF4CF9420F0F5D2002435A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FF4CF6A20F0F5D1002435A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF4CF8020F0F5D2002435A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF4CF8B20F0F5D2002435A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F5313BF20F109EB001BD8B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F5313C720F12686001BD8B4 /* Diamond.swift */,
+				5F5313CB20F182CA001BD8B4 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F5313C020F109F8001BD8B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F5313C520F12399001BD8B4 /* DiamondCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F5313C120F109FD001BD8B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FF4CF7220F0F5D1002435A4 /* DiamondCheckerVC.swift */,
+				5FF4CF7420F0F5D1002435A4 /* ShopVC.swift */,
+				5F5313C920F16BBF001BD8B4 /* ReceiptVC.swift */,
+				5F5313CD20F1849F001BD8B4 /* LoginVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5F5313C220F10A53001BD8B4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5F5313C320F10A8A001BD8B4 /* DiamondData.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5FF4CF6420F0F5D0002435A4 = {
+			isa = PBXGroup;
+			children = (
+				5FF4CF6F20F0F5D1002435A4 /* FloodDiamond */,
+				5FF4CF8620F0F5D2002435A4 /* FloodDiamondTests */,
+				5FF4CF9120F0F5D2002435A4 /* FloodDiamondUITests */,
+				5FF4CF6E20F0F5D1002435A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FF4CF6E20F0F5D1002435A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FF4CF6D20F0F5D1002435A4 /* FloodDiamond.app */,
+				5FF4CF8320F0F5D2002435A4 /* FloodDiamondTests.xctest */,
+				5FF4CF8E20F0F5D2002435A4 /* FloodDiamondUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FF4CF6F20F0F5D1002435A4 /* FloodDiamond */ = {
+			isa = PBXGroup;
+			children = (
+				5F5313C220F10A53001BD8B4 /* Constants */,
+				5F5313C120F109FD001BD8B4 /* Controllers */,
+				5F5313C020F109F8001BD8B4 /* Views */,
+				5F5313BF20F109EB001BD8B4 /* Models */,
+				5FF4CF7020F0F5D1002435A4 /* AppDelegate.swift */,
+				5FF4CF7620F0F5D1002435A4 /* Main.storyboard */,
+				5FF4CF7920F0F5D2002435A4 /* Assets.xcassets */,
+				5FF4CF7B20F0F5D2002435A4 /* LaunchScreen.storyboard */,
+				5FF4CF7E20F0F5D2002435A4 /* Info.plist */,
+			);
+			path = FloodDiamond;
+			sourceTree = "<group>";
+		};
+		5FF4CF8620F0F5D2002435A4 /* FloodDiamondTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FF4CF8720F0F5D2002435A4 /* FloodDiamondTests.swift */,
+				5FF4CF8920F0F5D2002435A4 /* Info.plist */,
+			);
+			path = FloodDiamondTests;
+			sourceTree = "<group>";
+		};
+		5FF4CF9120F0F5D2002435A4 /* FloodDiamondUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FF4CF9220F0F5D2002435A4 /* FloodDiamondUITests.swift */,
+				5FF4CF9420F0F5D2002435A4 /* Info.plist */,
+			);
+			path = FloodDiamondUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FF4CF6C20F0F5D1002435A4 /* FloodDiamond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FF4CF9720F0F5D2002435A4 /* Build configuration list for PBXNativeTarget "FloodDiamond" */;
+			buildPhases = (
+				5FF4CF6920F0F5D1002435A4 /* Sources */,
+				5FF4CF6A20F0F5D1002435A4 /* Frameworks */,
+				5FF4CF6B20F0F5D1002435A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloodDiamond;
+			productName = FloodDiamond;
+			productReference = 5FF4CF6D20F0F5D1002435A4 /* FloodDiamond.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FF4CF8220F0F5D2002435A4 /* FloodDiamondTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FF4CF9A20F0F5D2002435A4 /* Build configuration list for PBXNativeTarget "FloodDiamondTests" */;
+			buildPhases = (
+				5FF4CF7F20F0F5D2002435A4 /* Sources */,
+				5FF4CF8020F0F5D2002435A4 /* Frameworks */,
+				5FF4CF8120F0F5D2002435A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FF4CF8520F0F5D2002435A4 /* PBXTargetDependency */,
+			);
+			name = FloodDiamondTests;
+			productName = FloodDiamondTests;
+			productReference = 5FF4CF8320F0F5D2002435A4 /* FloodDiamondTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FF4CF8D20F0F5D2002435A4 /* FloodDiamondUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FF4CF9D20F0F5D2002435A4 /* Build configuration list for PBXNativeTarget "FloodDiamondUITests" */;
+			buildPhases = (
+				5FF4CF8A20F0F5D2002435A4 /* Sources */,
+				5FF4CF8B20F0F5D2002435A4 /* Frameworks */,
+				5FF4CF8C20F0F5D2002435A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FF4CF9020F0F5D2002435A4 /* PBXTargetDependency */,
+			);
+			name = FloodDiamondUITests;
+			productName = FloodDiamondUITests;
+			productReference = 5FF4CF8E20F0F5D2002435A4 /* FloodDiamondUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FF4CF6520F0F5D0002435A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Fabrice Mulumba";
+				TargetAttributes = {
+					5FF4CF6C20F0F5D1002435A4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5FF4CF8220F0F5D2002435A4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5FF4CF6C20F0F5D1002435A4;
+					};
+					5FF4CF8D20F0F5D2002435A4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5FF4CF6C20F0F5D1002435A4;
+					};
+				};
+			};
+			buildConfigurationList = 5FF4CF6820F0F5D0002435A4 /* Build configuration list for PBXProject "FloodDiamond" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FF4CF6420F0F5D0002435A4;
+			productRefGroup = 5FF4CF6E20F0F5D1002435A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FF4CF6C20F0F5D1002435A4 /* FloodDiamond */,
+				5FF4CF8220F0F5D2002435A4 /* FloodDiamondTests */,
+				5FF4CF8D20F0F5D2002435A4 /* FloodDiamondUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FF4CF6B20F0F5D1002435A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF4CF7D20F0F5D2002435A4 /* LaunchScreen.storyboard in Resources */,
+				5FF4CF7A20F0F5D2002435A4 /* Assets.xcassets in Resources */,
+				5FF4CF7820F0F5D1002435A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF4CF8120F0F5D2002435A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF4CF8C20F0F5D2002435A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FF4CF6920F0F5D1002435A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5313CA20F16BBF001BD8B4 /* ReceiptVC.swift in Sources */,
+				5F5313C820F12686001BD8B4 /* Diamond.swift in Sources */,
+				5FF4CF7520F0F5D1002435A4 /* ShopVC.swift in Sources */,
+				5F5313C420F10A8A001BD8B4 /* DiamondData.swift in Sources */,
+				5F5313CC20F182CA001BD8B4 /* User.swift in Sources */,
+				5F5313CE20F1849F001BD8B4 /* LoginVC.swift in Sources */,
+				5F5313C620F12399001BD8B4 /* DiamondCell.swift in Sources */,
+				5FF4CF7120F0F5D1002435A4 /* AppDelegate.swift in Sources */,
+				5FF4CF7320F0F5D1002435A4 /* DiamondCheckerVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF4CF7F20F0F5D2002435A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF4CF8820F0F5D2002435A4 /* FloodDiamondTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF4CF8A20F0F5D2002435A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF4CF9320F0F5D2002435A4 /* FloodDiamondUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FF4CF8520F0F5D2002435A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FF4CF6C20F0F5D1002435A4 /* FloodDiamond */;
+			targetProxy = 5FF4CF8420F0F5D2002435A4 /* PBXContainerItemProxy */;
+		};
+		5FF4CF9020F0F5D2002435A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FF4CF6C20F0F5D1002435A4 /* FloodDiamond */;
+			targetProxy = 5FF4CF8F20F0F5D2002435A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FF4CF7620F0F5D1002435A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FF4CF7720F0F5D1002435A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FF4CF7B20F0F5D2002435A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FF4CF7C20F0F5D2002435A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FF4CF9520F0F5D2002435A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FF4CF9620F0F5D2002435A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FF4CF9820F0F5D2002435A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EJE3ENTMS5;
+				INFOPLIST_FILE = FloodDiamond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AngelHack.FloodDiamond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FF4CF9920F0F5D2002435A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EJE3ENTMS5;
+				INFOPLIST_FILE = FloodDiamond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AngelHack.FloodDiamond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5FF4CF9B20F0F5D2002435A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EJE3ENTMS5;
+				INFOPLIST_FILE = FloodDiamondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AngelHack.FloodDiamondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloodDiamond.app/FloodDiamond";
+			};
+			name = Debug;
+		};
+		5FF4CF9C20F0F5D2002435A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EJE3ENTMS5;
+				INFOPLIST_FILE = FloodDiamondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AngelHack.FloodDiamondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloodDiamond.app/FloodDiamond";
+			};
+			name = Release;
+		};
+		5FF4CF9E20F0F5D2002435A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EJE3ENTMS5;
+				INFOPLIST_FILE = FloodDiamondUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AngelHack.FloodDiamondUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FloodDiamond;
+			};
+			name = Debug;
+		};
+		5FF4CF9F20F0F5D2002435A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EJE3ENTMS5;
+				INFOPLIST_FILE = FloodDiamondUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AngelHack.FloodDiamondUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FloodDiamond;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FF4CF6820F0F5D0002435A4 /* Build configuration list for PBXProject "FloodDiamond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF4CF9520F0F5D2002435A4 /* Debug */,
+				5FF4CF9620F0F5D2002435A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FF4CF9720F0F5D2002435A4 /* Build configuration list for PBXNativeTarget "FloodDiamond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF4CF9820F0F5D2002435A4 /* Debug */,
+				5FF4CF9920F0F5D2002435A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FF4CF9A20F0F5D2002435A4 /* Build configuration list for PBXNativeTarget "FloodDiamondTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF4CF9B20F0F5D2002435A4 /* Debug */,
+				5FF4CF9C20F0F5D2002435A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FF4CF9D20F0F5D2002435A4 /* Build configuration list for PBXNativeTarget "FloodDiamondUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF4CF9E20F0F5D2002435A4 /* Debug */,
+				5FF4CF9F20F0F5D2002435A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FF4CF6520F0F5D0002435A4 /* Project object */;
+}
