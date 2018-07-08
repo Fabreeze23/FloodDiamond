@@ -11,19 +11,10 @@ import UIKit
 
 class DiamondCheckerVC: UIViewController {
     
-    @IBOutlet weak var diamondName: UILabel!
-    
-    @IBOutlet weak var diamondDescription: UILabel!
-    
-    @IBOutlet weak var diamondCarat: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        diamondName.text = DIAMOND_DATA["name"]
-        diamondDescription.text = DIAMOND_DATA["description"]
-        diamondCarat.text = DIAMOND_DATA["carat"]
-        
+
     }
 
 

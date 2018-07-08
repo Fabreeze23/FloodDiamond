@@ -16,35 +16,4 @@ let POST_LOGIN_URL = "http://178.128.176.11:8080/login"
 let POST_BUY_URL = "http://192.168.1.156:8080/CreateTransaction"
 //Placeholder for JSON Diamond Data 
 
- let DIAMOND_DATA = [
-    "id": "5b40d0a93580df050b87ea20",
-    "name": "Ethical Diamond 1",
-    "carat": "0.2",
-    "diamondId": "testDiamondId",
-    "description": "This is a description about a diamond that is ethical.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Apollo_synth...",
-    "price": "2000"
-]
-
-let DIAMOND_DATA2 = [
-    "id": "5b40d0a93580df050b87ea20",
-    "name": "Ethical Diamond 2",
-    "carat": "0.2",
-    "diamondId": "testDiamondId",
-    "description": "This is a description about a diamond that is ethical.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Apollo_synth...",
-    "price": "3000"
-]
-
-let DIAMOND_DATA3 = [
-    "id": "5b40d0a93580df050b87ea20",
-    "name": "Ethical Diamond 3",
-    "carat": "0.2",
-    "diamondId": "testDiamondId",
-    "description": "This is a description about a diamond that is ethical.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Apollo_synth...",
-    "price": "4000"
-]
-
-
-let DIAMOND_DATA_LIST = [DIAMOND_DATA, DIAMOND_DATA2, ]
+var balance = 8000 //Simulutating a credit card stored on the account

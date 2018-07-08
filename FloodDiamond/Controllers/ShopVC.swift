@@ -218,7 +218,14 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                         let buyData = try encoder.encode(buy)
                         // ... and set our request's HTTP body
                         request.httpBody = buyData
+                        if (balance < diamond.price) {
+                            self.showBuyingFailedAlert()
+                            print("Not enough money")
+                        }
+                        balance -= diamond.price //Subtract balance from the price of the diamond
+                        
                         print("buyData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
+                        
                     } catch {
                         print("Error")
                     }
@@ -260,7 +267,14 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
         }
     }
 
-
+    private func showBuyingFailedAlert() {
+        let alertView = UIAlertController(title: "Buying Failed",
+                                          message: "Insufficient funds",
+                                          preferredStyle:. alert)
+        let okAction = UIAlertAction(title: "Please check your account", style: .default)
+        alertView.addAction(okAction)
+        present(alertView, animated: true)
+    }
 
 }
 
