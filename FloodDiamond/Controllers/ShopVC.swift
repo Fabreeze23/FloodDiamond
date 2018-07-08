@@ -22,12 +22,18 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
     
     var receiptDict: NSDictionary = ["first": 1]
 
+    @IBOutlet weak var loadDiamondButton: UIButton!
     
 
+    
+    @IBOutlet weak var diamondSelector: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadDiamondButton.layer.cornerRadius = 10
+
         tableView.delegate = self
         tableView.dataSource = self
         print(user)
@@ -151,10 +157,10 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        diamond = diamonds[indexPath.row]
+        diamond = diamonds[indexPath.row] 
         print(diamond.name)
         
-        
+        diamondSelector.text = diamond.name
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "diamondCell") as? DiamondCell {
             
@@ -180,14 +186,15 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
          receiptVC.supplierIDString = diamond.supplierId
          }
          }
-         */
+        
+        print("Help")
+ */
         
         if segue.identifier == "buttonToReceipt" {
             print("Check")
-            if let nav = segue.destination as? UINavigationController {
-                print("Check 2")
-                if let receiptVC = nav.viewControllers[0] as? ReceiptVC {
-                    print("Check 3")
+
+                if let receiptVC = segue.destination as? ReceiptVC {
+                    print("We good")
                     receiptVC.diamondIDString = diamond._id
                     receiptVC.supplierIDString = diamond.supplierId
                     receiptVC.diamondPrice = String(diamond.price)
@@ -215,7 +222,7 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                     } catch {
                         print("Error")
                     }
-                    
+                    /*
                     
                     // Create and run a URLSession data task with our JSON encoded POST request
                     let config = URLSessionConfiguration.default
@@ -246,10 +253,10 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                     
                     task.resume()
                     
-
+                        */
                     
                 }
-            }
+            
         }
     }
 

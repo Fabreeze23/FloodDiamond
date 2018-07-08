@@ -19,14 +19,15 @@ class DiamondCell: UITableViewCell {
     
     @IBOutlet weak var diamondDescription: UILabel!
     
-    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var buyDiamondButton: UIButton!
+    
+    @IBOutlet weak var diamondPriceLabel: UILabel!
     
     
     @IBOutlet weak var diamondImage: UIImageView!
     
     var diamond: Diamond!
     
-
     //Send ID of the diamond and the supplier
     @IBAction func buyButtonTapped(_ sender: Any) {
         print(diamond._id)
@@ -48,10 +49,12 @@ class DiamondCell: UITableViewCell {
     func configureCell(diamond: Diamond) {
         self.diamond = diamond
         self.diamondName.text = diamond.name
-        self.diamondCarat.text = String(diamond.carat) //Convert to string
+        self.diamondCarat.text = String(diamond.carat) + " carats"//Convert to string
         self.diamondDescription.text = diamond.description
+        self.diamondPriceLabel.text = "$" + String(diamond.price)
         downloadImage(urlString: diamond.image, imageView: self.diamondImage)
 
+        buyDiamondButton.layer.cornerRadius = 10
         
     }
     

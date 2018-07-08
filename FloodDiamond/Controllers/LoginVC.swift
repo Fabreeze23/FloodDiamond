@@ -8,7 +8,6 @@
 // Handles logging in to the app
 //https://medium.com/@sdrzn/networking-and-persistence-with-json-in-swift-4-part-2-e4f35a606141
 //https://www.raywenderlich.com/179924/secure-ios-user-data-keychain-biometrics-face-id-touch-id
-
 import UIKit
 
 struct KeychainConfiguration {
@@ -17,7 +16,7 @@ struct KeychainConfiguration {
 }
 
 class LoginVC: UIViewController {
-
+    
     var login: Login!
     var userToSend: User! //Goes to ShopVC
     
@@ -34,12 +33,12 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        
     }
-
     
- // Function is for dismissing keyboard by tapping out of it
+    
+    // Function is for dismissing keyboard by tapping out of it
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         view.endEditing(true)
         super.touchesBegan(touches, with: event)
@@ -50,7 +49,6 @@ class LoginVC: UIViewController {
         print(userNameTextField.text as Any)
         //login.username = userNameTextField.text!
         //login.password = passwordTextField.text!
-
         var usernameInput = ""
         var passwordInput = ""
         
@@ -109,21 +107,21 @@ class LoginVC: UIViewController {
                 self.performSegue(withIdentifier: "loginToApp", sender: (Any).self)
                 
                 /*
-                func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                    if segue.identifier == "loginToApp" {
-                        print("Check")
-                        if let nav = segue.destination as? UITabBarController {
-                            print("Check 2")
-                            if let shopVC = nav.viewControllers![1] as? ShopVC {
-                                print("Check 3")
-                                shopVC.user = loggedInUser
-                            }
-                        }
-                    }
-                }
-                */
+                 func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                 if segue.identifier == "loginToApp" {
+                 print("Check")
+                 if let nav = segue.destination as? UITabBarController {
+                 print("Check 2")
+                 if let shopVC = nav.viewControllers![1] as? ShopVC {
+                 print("Check 3")
+                 shopVC.user = loggedInUser
+                 }
+                 }
+                 }
+                 }
+                 */
             }
-            
+                
             else {
                 self.showLoginFailedAlert()
             }
@@ -145,24 +143,27 @@ class LoginVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginToApp" {
             print("Check")
-            if let nav = segue.destination as? UITabBarController {
+            if let tab = segue.destination as? UITabBarController {
                 print("Check 2")
-                if let shopVC = nav.viewControllers![1] as? ShopVC {
+                if let nav = tab.viewControllers![0] as? UINavigationController {
                     print("Check 3")
-                    shopVC.user = userToSend
+                    
+                    if let shopVC = nav.viewControllers.first as? ShopVC {
+                        shopVC.user = userToSend
+                    }
+                    
                 }
             }
         }
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

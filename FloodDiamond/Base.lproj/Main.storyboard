@@ -9,64 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController id="9pv-A4-QxB" customClass="DiamondCheckerVC" customModule="FloodDiamond" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="14D-Df-vnv"/>
-                        <viewControllerLayoutGuide type="bottom" id="zkG-sg-z00"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="187.5" y="363" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diamond_image" translatesAutoresizingMaskIntoConstraints="NO" id="cv7-hA-uF3">
-                                <rect key="frame" x="67" y="52" width="240" height="227"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="diamondName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbY-Vq-CGD">
-                                <rect key="frame" x="16" y="287" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="diamondDescription" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97f-iI-hZj">
-                                <rect key="frame" x="16" y="353" width="343" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="diamondCarat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-dd-0oX">
-                                <rect key="frame" x="16" y="475" width="343" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="diamondCarat" destination="4xp-dd-0oX" id="qnQ-ZD-5F5"/>
-                        <outlet property="diamondDescription" destination="97f-iI-hZj" id="OB2-ke-X3n"/>
-                        <outlet property="diamondName" destination="tbY-Vq-CGD" id="uSo-wU-CMR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1261.5999999999999" y="-304.4977511244378"/>
-        </scene>
         <!--Diamond Shop-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -79,17 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="293" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-0c-w7R">
-                                <rect key="frame" x="16" y="72" width="343" height="546"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="343" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-0c-w7R">
+                                <rect key="frame" x="16" y="128" width="343" height="283"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="diamondCell" rowHeight="293" id="Jlh-xz-qdD" customClass="DiamondCell" customModule="FloodDiamond" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="293"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="diamondCell" rowHeight="343" id="Jlh-xz-qdD" customClass="DiamondCell" customModule="FloodDiamond" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="343"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jlh-xz-qdD" id="eaq-wT-SeP">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="292.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="342.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="END-Mw-jeF">
@@ -118,44 +60,66 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozw-pj-QpZ">
-                                                    <rect key="frame" x="113" y="224" width="116" height="30"/>
+                                                    <rect key="frame" x="0.0" y="224" width="343" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.82651302271924942" green="1" blue="0.72788856466900453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <state key="normal" title="Buy"/>
                                                     <connections>
                                                         <action selector="buyButtonTapped:" destination="Jlh-xz-qdD" eventType="touchUpInside" id="Mvd-d0-wXC"/>
-                                                        <segue destination="xPF-Ye-I8W" kind="show" identifier="buttonToReceipt" id="htd-UR-tVG"/>
+                                                        <segue destination="Sct-1c-FNF" kind="show" identifier="buttonToReceipt" id="Ggi-Jl-Htn"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DiamondPriceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXW-E5-Qfb">
+                                                    <rect key="frame" x="149" y="92" width="179" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="buyDiamondButton" destination="Ozw-pj-QpZ" id="svk-uo-MDl"/>
                                             <outlet property="diamondCarat" destination="rsw-Pt-dqd" id="T7U-Np-Nz8"/>
                                             <outlet property="diamondDescription" destination="jwS-8G-uIf" id="sxC-hc-T4f"/>
                                             <outlet property="diamondImage" destination="END-Mw-jeF" id="BL8-W9-ysz"/>
                                             <outlet property="diamondName" destination="ckH-Ej-vfX" id="Vhy-Lr-F3d"/>
+                                            <outlet property="diamondPriceLabel" destination="NXW-E5-Qfb" id="bLo-vv-MoE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-E3-vXL">
-                                <rect key="frame" x="134" y="34" width="107" height="30"/>
+                                <rect key="frame" x="16" y="64" width="343" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.84538055765848363" blue="0.71971975828109747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Load Diamonds"/>
                                 <connections>
                                     <action selector="loadDiamondsTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="0Oa-1g-RI8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select your diamond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6y-hi-GRW">
+                                <rect key="frame" x="16" y="462" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="H1i-Ef-xDJ"/>
                     <connections>
+                        <outlet property="diamondSelector" destination="r6y-hi-GRW" id="hq5-92-pWw"/>
+                        <outlet property="loadDiamondButton" destination="sjK-E3-vXL" id="YgD-Em-mLz"/>
                         <outlet property="tableView" destination="H8G-0c-w7R" id="UY5-f9-PI9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336.8" y="590.55472263868069"/>
+            <point key="canvasLocation" x="2276" y="590.55472263868069"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="7SW-hS-O91">
@@ -208,12 +172,12 @@
                         <outlet property="loginButton" destination="rxz-mo-7KY" id="EHz-9e-nUx"/>
                         <outlet property="passwordTextField" destination="Tgg-0a-vcG" id="o1R-wS-4wY"/>
                         <outlet property="userNameTextField" destination="obm-px-D0t" id="K9Q-gW-b9b"/>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="loginToApp" id="E41-xS-Qw4"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="loginToApp" id="SAB-35-ciQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mq1-pW-W3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="1084"/>
+            <point key="canvasLocation" x="-65" y="1204"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -225,8 +189,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="2Na-tS-8My" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -336,30 +299,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4M-3Z-MGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3184.8000000000002" y="731.78410794602701"/>
+            <point key="canvasLocation" x="3548" y="591"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Y0Q-el-fAW">
+        <!--Diamond Shop-->
+        <scene sceneID="nOk-VX-06B">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xPF-Ye-I8W" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Na-tS-8My" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Diamond Shop" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hQQ-GB-0Jc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xeQ-id-Nlz">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Sct-1c-FNF" kind="relationship" relationship="rootViewController" id="kNQ-J3-Hoo"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="u9V-7X-L8B"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uOe-AD-iCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxO-rD-Zxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245.5999999999999" y="731.78410794602701"/>
+            <point key="canvasLocation" x="1137" y="107"/>
         </scene>
     </scenes>
     <resources>
-        <image name="diamond_image" width="612" height="612"/>
-        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
