@@ -26,6 +26,7 @@ class ReceiptVC: UIViewController {
         supplierIDLabel.text = supplierIDString
         diamondIDLabel.text = diamondIDString
         print(supplierIDString)
+        
     }
 
 

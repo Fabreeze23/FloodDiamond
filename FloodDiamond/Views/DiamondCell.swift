@@ -6,6 +6,8 @@
 //  Copyright © 2018 Fabrice Mulumba. All rights reserved.
 //
 // Cell for a diamond tableview cell
+// Got weird error for image in Swift 4
+//https://stackoverflow.com/questions/46362641/xcode-uiview-initwithframe-must-be-used-from-main-thread-only
 
 import UIKit
 
@@ -19,6 +21,9 @@ class DiamondCell: UITableViewCell {
     
     @IBOutlet weak var buyButton: UIButton!
     
+    
+    @IBOutlet weak var diamondImage: UIImageView!
+    
     var diamond: Diamond!
     
 
@@ -29,14 +34,25 @@ class DiamondCell: UITableViewCell {
 
     }
     
+    func downloadImage(urlString: String, imageView: UIImageView) {
+        let url = URL(string: urlString)!
+        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+            guard let data = data else { return }
+            DispatchQueue.main.async { // Make sure you're on the main thread here
+                imageView.image = UIImage(data: data)
+            }
+        }
+        task.resume()
+    }
+    
     func configureCell(diamond: Diamond) {
         self.diamond = diamond
         self.diamondName.text = diamond.name
         self.diamondCarat.text = String(diamond.carat) //Convert to string
         self.diamondDescription.text = diamond.description
+        downloadImage(urlString: diamond.image, imageView: self.diamondImage)
+
+        
     }
-    
-    
-    
     
 }

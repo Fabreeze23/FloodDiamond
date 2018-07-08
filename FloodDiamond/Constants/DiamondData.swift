@@ -9,8 +9,8 @@
 import Foundation
 
 // API URLS
-let GET_DIAMONDS_URL = "http://192.168.1.246:8080/GetDiamonds"
-
+let GET_DIAMONDS_URL = "http://178.128.176.11:8080/GetDiamonds"
+let POST_LOGIN_URL = "http://178.128.176.11:8080/login"
 
 //Placeholder for JSON Diamond Data 
 

@@ -18,15 +18,20 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
     
     var diamond: Diamond!
     var diamonds = [Diamond]() //Placeholder for array of diamonds
-    
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        print(user)
+        print(user.userId)
+        
+        
+        
         //self.tableView.tableFooterView = UIView(frame: CGRect.zero)
-
+       
         //getDiamondData()
         //Will make the get request in here
         
@@ -61,7 +66,7 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
         
         */
         
-
+        
     }
     
     /*
@@ -93,7 +98,7 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
     
     @IBAction func loadDiamondsTapped(_ sender: Any) {
         
-        let diamondsURL = URL(string: "http://192.168.1.246:8080/GetDiamonds")
+        let diamondsURL = URL(string: GET_DIAMONDS_URL)
         
         let task = URLSession.shared.dataTask(with: diamondsURL!) { [unowned self] (data, response, error) in
             guard let data = data else {

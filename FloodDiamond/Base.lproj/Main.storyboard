@@ -92,7 +92,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="292.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diamond_image" translatesAutoresizingMaskIntoConstraints="NO" id="END-Mw-jeF">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="END-Mw-jeF">
                                                     <rect key="frame" x="0.0" y="2" width="141" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -132,6 +132,7 @@
                                             <outlet property="buyButton" destination="Ozw-pj-QpZ" id="Aq9-o9-2eF"/>
                                             <outlet property="diamondCarat" destination="rsw-Pt-dqd" id="T7U-Np-Nz8"/>
                                             <outlet property="diamondDescription" destination="jwS-8G-uIf" id="sxC-hc-T4f"/>
+                                            <outlet property="diamondImage" destination="END-Mw-jeF" id="BL8-W9-ysz"/>
                                             <outlet property="diamondName" destination="ckH-Ej-vfX" id="Vhy-Lr-F3d"/>
                                         </connections>
                                     </tableViewCell>
@@ -188,7 +189,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxz-mo-7KY">
                                 <rect key="frame" x="142" y="481" width="87" height="30"/>
@@ -198,7 +199,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" identifier="loginToApp" id="0nl-fn-Rxt"/>
+                                    <action selector="loginButtonTapped:" destination="ERP-Ch-cQc" eventType="touchUpInside" id="KbB-XF-LXt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -208,11 +209,12 @@
                         <outlet property="loginButton" destination="rxz-mo-7KY" id="EHz-9e-nUx"/>
                         <outlet property="passwordTextField" destination="Tgg-0a-vcG" id="o1R-wS-4wY"/>
                         <outlet property="userNameTextField" destination="obm-px-D0t" id="K9Q-gW-b9b"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="loginToApp" id="E41-xS-Qw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mq1-pW-W3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-959.20000000000005" y="393.55322338830587"/>
+            <point key="canvasLocation" x="-281" y="1084"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

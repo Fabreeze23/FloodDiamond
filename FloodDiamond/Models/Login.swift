@@ -1,18 +1,17 @@
 //
-//  User.swift
+//  Login.swift
 //  FloodDiamond
 //
 //  Created by Fabrice Mulumba on 7/7/18.
 //  Copyright © 2018 Fabrice Mulumba. All rights reserved.
 //
-// User file
+// Submitting login as JSON
 
 import Foundation
 
-struct User: Decodable {
+
+struct Login: Codable {
     
-    let userId: String
     let username: String
     let password: String
- 
 }
