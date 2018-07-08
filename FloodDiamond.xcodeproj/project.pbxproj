@@ -15,6 +15,8 @@
 		5F5313CE20F1849F001BD8B4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313CD20F1849F001BD8B4 /* LoginVC.swift */; };
 		5F5313D020F18AA7001BD8B4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5313CF20F18AA7001BD8B4 /* Login.swift */; };
 		5FD0E5DF20F1A364006E449C /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0E5DE20F1A364006E449C /* KeychainPasswordItem.swift */; };
+		5FD0E5E120F1C284006E449C /* Buy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0E5E020F1C284006E449C /* Buy.swift */; };
+		5FD0E5E320F1D6B3006E449C /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0E5E220F1D6B3006E449C /* Receipt.swift */; };
 		5FF4CF7120F0F5D1002435A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7020F0F5D1002435A4 /* AppDelegate.swift */; };
 		5FF4CF7320F0F5D1002435A4 /* DiamondCheckerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7220F0F5D1002435A4 /* DiamondCheckerVC.swift */; };
 		5FF4CF7520F0F5D1002435A4 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4CF7420F0F5D1002435A4 /* ShopVC.swift */; };
@@ -51,6 +53,8 @@
 		5F5313CD20F1849F001BD8B4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5F5313CF20F18AA7001BD8B4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5FD0E5DE20F1A364006E449C /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		5FD0E5E020F1C284006E449C /* Buy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buy.swift; sourceTree = "<group>"; };
+		5FD0E5E220F1D6B3006E449C /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		5FF4CF6D20F0F5D1002435A4 /* FloodDiamond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloodDiamond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF4CF7020F0F5D1002435A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FF4CF7220F0F5D1002435A4 /* DiamondCheckerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCheckerVC.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				5F5313C720F12686001BD8B4 /* Diamond.swift */,
 				5F5313CB20F182CA001BD8B4 /* User.swift */,
 				5F5313CF20F18AA7001BD8B4 /* Login.swift */,
+				5FD0E5E020F1C284006E449C /* Buy.swift */,
+				5FD0E5E220F1D6B3006E449C /* Receipt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,8 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD0E5E120F1C284006E449C /* Buy.swift in Sources */,
 				5F5313CA20F16BBF001BD8B4 /* ReceiptVC.swift in Sources */,
 				5F5313D020F18AA7001BD8B4 /* Login.swift in Sources */,
+				5FD0E5E320F1D6B3006E449C /* Receipt.swift in Sources */,
 				5F5313C820F12686001BD8B4 /* Diamond.swift in Sources */,
 				5FF4CF7520F0F5D1002435A4 /* ShopVC.swift in Sources */,
 				5F5313C420F10A8A001BD8B4 /* DiamondData.swift in Sources */,

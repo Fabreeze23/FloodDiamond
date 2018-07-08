@@ -19,7 +19,7 @@ struct KeychainConfiguration {
 class LoginVC: UIViewController {
 
     var login: Login!
-    var userToSend: User!
+    var userToSend: User! //Goes to ShopVC
     
     @IBOutlet weak var userNameTextField: UITextField!
     
@@ -97,7 +97,7 @@ class LoginVC: UIViewController {
                 
                 
                 //printing the json in console
-                //print(jsonObj!.value(forKey: "userId")!)
+                print(jsonObj!.value(forKey: "userId")!)
                 let userID = jsonObj!.value(forKey: "userId")! as! String
                 let loggedInUser = User(userId: userID, username: usernameInput, password: passwordInput)
                 print(loggedInUser)

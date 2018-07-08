@@ -20,6 +20,11 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
     var diamonds = [Diamond]() //Placeholder for array of diamonds
     var user: User!
     
+    var receiptDict: NSDictionary = ["first": 1]
+
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -165,7 +170,7 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
         
     }
     
-    // When buyButtonTapped is tapped
+    // When buyButtonTapped is tapped, sned post request 
      override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         /*
@@ -185,10 +190,69 @@ class ShopVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UINa
                     print("Check 3")
                     receiptVC.diamondIDString = diamond._id
                     receiptVC.supplierIDString = diamond.supplierId
+                    receiptVC.diamondPrice = String(diamond.price)
+                    receiptVC.diamondName = diamond.name
+                    receiptVC.nameOfUser = user.username
+                    
+                    let buy = Buy(userId: user.userId, supplierId: diamond.supplierId, diamondId: diamond._id)
+                    
+                    let buyURL = URL(string: POST_BUY_URL)
+                    
+                    var request = URLRequest(url: buyURL!)
+                    request.httpMethod = "POST"
+                    // Make sure that we include headers specifying that our request's HTTP body
+                    // will be JSON encoded
+                    var headers = request.allHTTPHeaderFields ?? [:]
+                    headers["Content-Type"] = "application/json"
+                    request.allHTTPHeaderFields = headers
+                    
+                    let encoder = JSONEncoder()
+                    do {
+                        let buyData = try encoder.encode(buy)
+                        // ... and set our request's HTTP body
+                        request.httpBody = buyData
+                        print("buyData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
+                    } catch {
+                        print("Error")
+                    }
+                    
+                    
+                    // Create and run a URLSession data task with our JSON encoded POST request
+                    let config = URLSessionConfiguration.default
+                    let session = URLSession(configuration: config)
+                    let task = session.dataTask(with: request) { (responseData, response, responseError) in
+                        guard responseError == nil else {
+                            return
+                        }
+                        
+                        if let jsonObj = try? JSONSerialization.jsonObject(with: responseData!, options: .allowFragments) as? NSDictionary {
+                            
+                            
+                            //printing the json in console
+                            //print(jsonObj!.value(forKey: "userId")!)
+                            print(jsonObj!)
+                            
+                            print("This is your receipt data")
+                            
+                            self.receiptDict = jsonObj!
+                            print(self.receiptDict)
+                        }
+                            
+                        else {
+                            print("No receipt data")
+                        }
+                        
+                    }
+                    
+                    task.resume()
+                    
+
+                    
                 }
             }
         }
     }
+
 
 
 }

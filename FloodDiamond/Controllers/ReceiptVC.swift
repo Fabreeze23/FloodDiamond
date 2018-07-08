@@ -12,23 +12,43 @@ import UIKit
 class ReceiptVC: UIViewController {
     
 
-    @IBOutlet weak var supplierIDLabel: UILabel!
-    
+    @IBOutlet weak var diamondNameLabel: UILabel!
     
     @IBOutlet weak var diamondIDLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var diamondPriceLabel: UILabel!
+    
+    @IBOutlet weak var supplierIDLabel: UILabel!
+    
     var supplierIDString: String!
     var diamondIDString: String!
+    var diamondPrice: String!
+    var diamondName: String!
+    var nameOfUser: String!
+    
+    var receiptData: NSDictionary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        supplierIDLabel.text = supplierIDString
+        diamondNameLabel.text = diamondName
+        nameLabel.text = nameOfUser
+        diamondPriceLabel.text = "$" + diamondPrice
         diamondIDLabel.text = diamondIDString
-        print(supplierIDString)
+        supplierIDLabel.text = supplierIDString
         
+        //print("Receipt data:", receiptData)
+        
+        /*
+        diamondNameLabel.text = receiptData.diamondName
+        nameLabel.text = receiptData.name
+        supplierNameLabel.text = receiptData.supplierName
+        supplierLocationLabel.text = receiptData.supplierLocation
+        */
+        //print("The Receipt Data:", receiptData.diamondName)
     }
-
 
 
     /*
